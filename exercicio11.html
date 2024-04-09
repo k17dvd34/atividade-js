@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 11</title>
     <style>
         body{
+            background-color: blue;
+            color: black;
             text-align: center
         }
     </style>
@@ -13,13 +15,17 @@
 <body>
     <h1>Exercício 11</h1>
     <script>
-        // Exercício 11
-        var precodolar = window.prompt("digite o valor em dolar")
-        var precoreal = precodolar * 5.06
+        // Declare a variável preço em dólar
+        var precoDolar = 50; // Este é apenas um exemplo, substitua pelo valor real
 
-        window.alert("o valor em real: " + precoreal)
+        // Defina a taxa de câmbio
+        var taxaCambio = 5.25; // Valor hipotético da taxa de câmbio (1 dólar = 5.25 reais)
 
-        
+        // Calcule o valor em reais
+        var precoReais = precoDolar * taxaCambio;
+
+        // Mostra o resultado na página
+        document.write("O preço em reais é: R$" + precoReais.toFixed(2)); // toFixed(2) para exibir apenas duas casas decimais
     </script>
 </body>
 </html>
